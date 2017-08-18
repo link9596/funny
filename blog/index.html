@@ -300,6 +300,34 @@ H₂Blog</div></span>
 </div>   </footer>  
 
 
+<!--手动进行页面滑稽-->
+<div id="hjDiv" onclick="hj()" style="position:fixed;bottom:15px;left:-82px">
+<div class="mdui-float-right mdui-chip mdui-ripple mdui-ripple-black mdui-color-yellow-700 mdui-m-t-2" style="width:100px">
+
+<img class="mdui-chip-icon mdui-color-yellow-800 mdui-float-right" src="https://link9596.github.io/funny/img/funny-right.png" style="margin-right: 0px"></img>
+
+<div class="mdui-chip-title mdui-text-color-white" style="margin-top: 2px;margin-left: 8px">第1页
+  </div>
+ </div>
+
+ <script>
+var isHjRight;
+var hjDiv=document.getElementById("hjDiv");
+function  hj(){
+
+            if(isHjRight){
+hjDiv.style.left="-82px";
+isHjRight=false;
+}else{
+ hjDiv.style.left="0%";
+isHjRight=true;
+}
+
+ }
+         </script>
+</div>
+
+
 <link rel="stylesheet" href="https://link9596.github.io/funny/f1/a.css">
 
 <script src="https://link9596.github.io/funny/f1/a.js"></script>
