@@ -282,6 +282,24 @@ a{text-decoration:none;
       </div>
     </div>
 
+<a hrf="https://link9596.github.io/funny/">
+<div class="mdui-float-left mdui-chip mdui-ripple mdui-ripple-black mdui-color-grey-400 mdui-m-b-1" onclick="pageup();" style="width:100px">
+<img class="mdui-chip-icon mdui-color-grey-500" src="https://link9596.github.io/funny/img/funny.png"></img>
+
+<div class="mdui-chip-title mdui-text-color-white" style="margin-bottom:-4px">上一页</div></div></a>
+
+
+<a hrf="https://link9596.github.io/funny/page2.html">
+<div class="mdui-float-right mdui-chip mdui-ripple mdui-ripple-black mdui-color-grey-400 mdui-m-b-1" onclick="pagedown();" style="width:100px">
+
+<img class="mdui-chip-icon mdui-color-grey-500 mdui-float-right" src="https://link9596.github.io/funny/img/funny.png" style="margin-right: 0px"></img>
+
+<div class="mdui-chip-title mdui-text-color-white" style="margin-top: 2px;margin-left: 8px">下一页</div></div></a>
+
+
+
+
+
   </div>
 </div>
 
@@ -307,7 +325,8 @@ H₂Blog</div></span>
 <img class="mdui-chip-icon mdui-color-yellow-800 mdui-float-right" src="https://link9596.github.io/funny/img/funny-right.png" style="margin-right: 0px"></img>
 
 <div class="mdui-chip-title mdui-text-color-white" style="margin-top: 2px;margin-left: 8px">第1页
-  </div>
+  
+</div>
  </div>
 
  <script>
@@ -324,6 +343,22 @@ isHjRight=true;
 }
 
  }
+
+
+function pageup(){
+ 
+mdui.snackbar({
+  message: '上一页？不存在的…-_-||'
+});
+}
+
+function pagedown(){
+ 
+mdui.snackbar({
+  message: '没有下一页了啊喂！=_='
+});
+}
+
          </script>
 </div>
 
