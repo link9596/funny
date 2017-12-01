@@ -6,11 +6,11 @@ a{
 
 .h1,.h2,.h3,.h4,.lead,body,h1,h2,h3,h4{
     font-family:RobotoDraft,Roboto,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei",arial,sans-serif;font-weight:300;
-background: #3F51B5 url("f1/2.png") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
 }
 
 body {
   margin: 0;
+ background: #3F51B5 url("f1/2.png") no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
 }
 
 .mdp{
@@ -36,7 +36,7 @@ body {
 }
 
 .bg{
- background: #9FC2D6 url("f1/1-funny.png") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
+ background: #9FC2D6 url("f1/1-funny.png") no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
 }
 
 .s-top{
@@ -99,6 +99,6 @@ font-size:12px;
 }
 
 .bg{
- background: #3F51B5 url("f1/1-funny.png") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
+ background: #3F51B5 url("f1/1-funny.png") no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
 }
 }
