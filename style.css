@@ -74,7 +74,7 @@ font-size:12px;
 
 @media (min-width: 767px) {
 .mdp{
- background: #0b77ff url("f1-funny.png")
+ background: #0b77ff url("f1-funny.png");
  border-radius: 10px;
  padding-top: 15px;
  padding-bottom:15px;
