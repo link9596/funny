@@ -36,7 +36,7 @@ body {
 }
 
 .bg{
- background: #9FC2D6 url("F:\MineCraft\bg\2.jpg") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
+ background: #9FC2D6 url("f1/1-funny.png") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
 }
 
 .s-top{
@@ -74,7 +74,7 @@ font-size:12px;
 
 @media (min-width: 767px) {
 .mdp{
- background: #0b77ff url("file://F:/MineCraft/bg/2.jpg")
+ background: #0b77ff url("f1-funny.png")
  border-radius: 10px;
  padding-top: 15px;
  padding-bottom:15px;
