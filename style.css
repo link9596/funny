@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+a{
+ text-decoration:none;
+}
+
+.h1,.h2,.h3,.h4,.lead,body,h1,h2,h3,h4{
+    font-family:RobotoDraft,Roboto,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei",arial,sans-serif;font-weight:300
+}
+
+body {
+  margin: 0;
+}
+
+.mdp{
+ border-radius: 5px;
+ padding-top: 15px;
+ padding-bottom:15px;
+ margin-bottom:20px;
+ width:100%;
+ border:0;
+ box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+ background-color:rgba(255,255,255,.92)
+}
+
+.cmdp{
+ border-radius: 5px;
+ padding-top: 15px;
+ padding-bottom:15px;
+ margin-bottom:20px;
+ width:100%;
+ border:0;
+ box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+ background-color:rgba(255,255,255,.92)
+}
+
+.bg{
+ background: #9FC2D6 url("F:\MineCraft\bg\2.jpg") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
+}
+
+.s-top{
+font-size:10px;
+color:#efefef;
+text-align:center;
+padding: 12px
+}
+
+.s-bot{
+font-size:15px;
+color:#434343;
+padding: 22px;
+}
+
+.title{
+font-weight:bold;
+text-align:center;
+color:#ffffff;
+font-size:21px;
+}
+
+.stitle{
+text-align:center;
+color:#009688;
+margin:15px
+}
+
+.sg{
+text-align:center;
+color:#666666;
+font-size:12px;
+}
+
+
+@media (min-width: 767px) {
+.mdp{
+ background: #0b77ff url("file://F:/MineCraft/bg/2.jpg")
+ border-radius: 10px;
+ padding-top: 15px;
+ padding-bottom:15px;
+ width:32%;
+ height: 150px;
+ position: absolute;
+ left: 67%;
+ border:0;
+ box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+ background-color:rgba(255,255,255,.92)
+}
+.cmdp{
+ border-radius: 5px;
+ padding-top: 15px;
+ padding-bottom:15px;
+ margin-bottom:20px;
+ width:65%;
+ float:left;
+ border:0;
+ box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+ background-color:rgba(255,255,255,.92)
+}
+
+.bg{
+ background: #3F51B5 url("file://F:/MineCraft/bg/2.jpg") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;text-align: center;margin-bottom:20px;
+}
+}
