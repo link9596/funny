@@ -42,7 +42,7 @@ body {
 
 .footext-l{
  margin-left: 15px;
- float: left;
+ text-align: left;
 }
 
 .footext-r{
