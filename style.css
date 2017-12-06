@@ -50,8 +50,7 @@ body {
  position: relative;
  right: 20px;
  margin-right: 15px;
- text-align: right;
- display: inline;
+ float: right;
 }
 
 .cof{
