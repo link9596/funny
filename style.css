@@ -27,7 +27,7 @@ body {
 }
 
 .footers{
- font-size: 18px;
+ font-size: 13px;
  color: #eeeeee;
  background: #555555 url("f1/color.png") no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;
  border-radius: 5px;
