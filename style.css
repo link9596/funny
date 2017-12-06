@@ -26,6 +26,22 @@ body {
  background-color:rgba(255,255,255,.92)
 }
 
+.footers{
+ background: #555555 url("f1/color.png") no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;
+ border-radius: 5px;
+ bottom: 0;
+ padding-top: 3px;
+ padding-bottom:3px;
+ width:100%;
+ border:0;
+ box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+ background-color:rgba(88,88,88,.92)
+}
+
+.cof{
+clear: both;
+}
+
 .cmdp{
  border-radius: 5px;
  padding-top: 15px;
@@ -82,8 +98,9 @@ font-size:12px;
  padding-bottom:15px;
  width:32%;
  height: 150px;
- position: absolute;
- left: 67%;
+ /*position: relative;*/
+ float: right;
+ /*left: 67%;*/
  border:0;
  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
  background-color:rgba(255,255,255,.92)
