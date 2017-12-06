@@ -44,6 +44,10 @@ body {
  overflow: hidden;
 }
 
+div.foot:hover{
+ height: 80px;
+}
+
 .footext-l{
  margin-left: 15px;
  text-align: left;
