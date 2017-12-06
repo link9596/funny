@@ -47,7 +47,7 @@ body {
 
 .footext-r{
  margin-right: 15px;
- text-align: right;
+ float: right;
 }
 
 .cof{
