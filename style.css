@@ -41,6 +41,16 @@ body {
  background-color:rgba(88,88,88,.92)
 }
 
+.footext-l{
+ margin-left: 15px;
+ float: left;
+}
+
+.footext-r{
+ margin-right: 15px;
+ float: right;
+}
+
 .cof{
 clear: both;
 }
