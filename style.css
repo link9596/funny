@@ -10,7 +10,7 @@ a{
 }
 
 body {
- line-height: 35px;
+ line-height: 30px;
  margin: 0;
  background: #3F51B5 url("f1/2.png") no-repeat fixed center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size:cover; max-width:100%; margin: auto;margin-bottom:20px;
   }
