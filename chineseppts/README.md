@@ -1,4 +1,4 @@
-This is a HTML5 "Powerpoint" demo.
+**This is a HTML5 "Powerpoint" demo.
 
 You can fork it here to help you Work or Study.
 
