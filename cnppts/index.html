@@ -1,0 +1,96 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>html5 svg弹性摇晃页面切换特效</title>
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!--一定要有的哦-->
+<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+
+<script src="js/snap.svg-min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+	<div id="slideshow" class="slideshow">
+		<ul style="width: 700%; -webkit-transition: -webkit-transform 500ms cubic-bezier(0.8, 0, 0.2, 1); transition: -webkit-transform 500ms cubic-bezier(0.8, 0, 0.2, 1); -webkit-transform: translate3d(-85.71428571428571%, 0px, 0px);">
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/browser.svg" alt="Browser Icon">
+					<h1>My name is 李诗曼。</h1>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/heart.svg" alt="Heart Icon">
+					<blockquote>
+						<p>不要害怕争吵,但寻求危险的冒险。</p>
+					</blockquote>
+					<p>大仲马（法国作家）</p>
+				</div>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/letter.svg" alt="Letter Icon">
+					<blockquote>
+						<p>如果你不知道你要去哪里,任何道路都将让你在那里。</p>
+					</blockquote>
+					<p>路易斯·卡罗尔（英国作家）</p>
+				</div>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/football.svg" alt="Football Icon">
+					<blockquote>
+						<p>拖延是跟上昨天的艺术。</p>
+					</blockquote>
+					<p>唐·马奎斯</p>
+				</div>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/match.svg" alt="Match Icon">
+					<blockquote>
+						<p>我是一个理想主义者。我不知道我去哪里,但是我马上就来。</p></blockquote>
+					<p>桑德堡</p>
+				</div>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,69,9.871,69,29.871C69,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,1,50,1,30C1,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<img class="icon" src="icon/watch.svg" alt="Watch Icon">
+					<blockquote>
+						<p>我拒绝加入任何俱乐部,我是一个成员。</p></blockquote>
+					<p>格劳乔·马克斯</p>
+				</div>
+			</li>
+			<li style="width: 14.285714285714286%;"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none"><path d="M33,0C33,0,74,0,74,0C74,0,74,9.871,74,29.871C74,49.871,74,60,74,60C74,60,32.666,60,32.666,60C32.666,60,32.541,60,32.541,60C32.541,60,6,60,6,60C6,60,6,50,6,30C6,10,6,0,6,0C6,0,33,0,33,0"></path><desc>Created with Snap</desc><defs></defs></svg>
+				<div class="slide">
+					<div class="related">
+						<p>演示节速度很多的很多很多的活动活动和得到很好的活动都活得好好的大坏蛋很多很多很多很好的的很多很多很好的活动很多很多很好的活动活动和南方南方你</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	<nav><span class="prev"><img class="icons" src="icon/up.svg" alt="Football Icon"></span><span class="next"><img class="icons" src="icon/fo.svg" alt="Football Icon"></span></nav></div>
+</div><!-- /container -->
+
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/sliderFx.js"></script>
+<script type="text/javascript">
+(function(){
+
+	new SliderFx( document.getElementById('slideshow'), {
+		easing : 'cubic-bezier(.8,0,.2,1)'
+	});
+
+})();
+</script>
+</body></html>
