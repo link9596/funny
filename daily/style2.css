@@ -56,4 +56,14 @@ clear: both;
  background-color:rgba(255,255,255,.92)
 }
 
+.d-title{
+text-align: center;
+font-size: 50px;
+color: #EEEEEE;
+}
 
+d-sentence{
+text-align: center;
+font-size: 25px;
+color: #EEEEEE;
+}
