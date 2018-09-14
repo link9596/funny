@@ -51,6 +51,20 @@ window.onload=function()
     xmlhttp.open("GET","https://api.lwl12.com/hitokoto/main/get",true);
     xmlhttp.send();
 }
+
+var daily = new XMLHttpRequest();
+daily.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        cocolink = JSON.parse(this.responseText);
+        document.getElementById("title").innerHTML = cocolink.data.title;
+        document.getElementById("author").innerHTML = cocolink.data.author;
+        document.getElementById("content").innerHTML = cocolink.data.content;
+    }
+};
+daily.open("GET", "https://interface.meiriyiwen.com/article/today?dev=1", true);
+daily.send();
+
+
    </script>
    <div id="sc">
    </div>
@@ -76,4 +90,4 @@ H₂ 每日一文，在此偶遇 <br>
   </div>
  </div>
 </body>
-<script src="http://lkins.ml/pp.php"></script>
+
