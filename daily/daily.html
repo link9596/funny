@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
    <meta charset="utf-8">
    <link rel="shortcut icon" type="image/x-icon" href="https://linker.ml/img/favicon.ico" media="screen"/>
-   <script src="materialMenu.min.js"></script>
  </head>
 
  <style>
@@ -36,9 +35,6 @@ body{
  </style>
 
  <script>
-
-var menu = new Menu;
-
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -79,7 +75,7 @@ ajax()
 
 <title>文。</title>
 <body>
-
+<button class="mm-menu-toggle" id="mm-menu-toggle">Toggle Menu</button>
 <nav id="mm-menu" class="mm-menu">
   <div class="mm-menu__header">
     <h2 class="mm-menu__title">Nick Salloum</h2>
@@ -112,8 +108,13 @@ ajax()
     </li>
   </ul>
 </nav><!-- /nav -->
-
-    <div class="fade">
+<script>
+var menu = new Menu;
+</script>
+<script src="materialMenu.min.js"></script>
+ 
+ 
+   <div class="fade">
       <h1 style="color: #999999;text-align:center;" id="title"></h1>
       <div class="fade">
         <h6 style="color: #999999;text-align:center" id="author"></h6>
