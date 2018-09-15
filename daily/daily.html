@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+ <head>
+   <link rel=stylesheet href="https://lkopp.ml/assets/css/fade.css">
+   <link rel="stylesheet" href="style.min.css">
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/x-icon" href="https://linker.ml/img/favicon.ico" media="screen"/>
+   <script src="materialMenu.min.js"></script>
+ </head>
+
+ <style>
+
+@-webkit-keyframes fade-in-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+     }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    }
+}
+
+.h1,.h2,.h3,.h4,.lead,body,h1,h2,h3,h4{
+  font-family:RobotoDraft,Roboto,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei",arial,sans-serif;font-weight:300;
+}
+
+@media (min-width: 767px) {
+body{
+ padding-left:200px;
+ padding-right:200px;
+ }
+}
+
+ </style>
+
+ <script>
+
+var menu = new Menu;
+
+var daily = new XMLHttpRequest();
+daily.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        cocolink = JSON.parse(this.responseText);
+        document.getElementById("title").innerHTML = cocolink.data.title;
+        document.getElementById("content").innerHTML = cocolink.data.content;
+        document.getElementById("author").innerHTML = cocolink.data.author;
+  }
+};
+daily.open("GET", "https://interface.meiriyiwen.com/article/today?dev=1", true);
+daily.send();
+
+ajax()
+  function ajax(option){
+    var xhr = null;
+    if(window.XMLHttpRequest){
+      xhr = new window.XMLHttpRequest();
+    }else{ // ie
+      xhr = new ActiveObject("Microsoft")
+    }
+    xhr.open("get","location.href");
+    xhr.send(null);
+    xhr.onreadystatechange = function(){
+      var time = null,
+          curDate = null;
+      if(xhr.readyState===2){
+        // Get time
+        time = xhr.getResponseHeader("Date");
+        console.log(xhr.getAllResponseHeaders())
+        curDate = new Date(time);
+        document.getElementById("sitetime").innerHTML = (parseInt((((curDate.getTime() / 1000) - 1536768000 ) / 86400 )));
+      }
+    }
+  }
+
+
+</script>
+
+<title>文。</title>
+<body>
+
+<nav id="mm-menu" class="mm-menu">
+  <div class="mm-menu__header">
+    <h2 class="mm-menu__title">Nick Salloum</h2>
+  </div>
+  <ul class="mm-menu__items">
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-home"></i> Home</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-person"></i> Profile</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-inbox"></i> Inbox</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-favorite"></i> Favourites</span>
+      </a>
+    </li>
+    <li class="mm-menu__item">
+      <a class="mm-menu__link" href="#">
+        <span class="mm-menu__link-text"><i class="md md-settings"></i> Settings</span>
+      </a>
+    </li>
+  </ul>
+</nav><!-- /nav -->
+
+    <div class="fade">
+      <h1 style="color: #999999;text-align:center;" id="title"></h1>
+      <div class="fade">
+        <h6 style="color: #999999;text-align:center" id="author"></h6>
+          <div class="fade">
+          <h2 style="color: #999999;margin-left:20px;margin-right:20px;line-height:45px;" id="content"></h2>
+            <div class="fade">
+            <h6 style="color: #999999;text-align:center">每日一图.</h6>
+            <img style="width:98%" src="http://api.dujin.org/bing/1920.php"/>
+            <a style="color: #999999;text-align:center;font-size: 20px;" id="copyright" href="#"></a>
+            <h6 style="color: #999999;text-align:center">© 2018 Link, Funny.</h6>
+            <span style="color:#999999;font-size:10px;text-align:center;display: block;font-weight:bold;">Already <span style="text-align:center" id="sitetime"></span> days.</span>
+            </div>
+          </div>
+    </div>
+</body>
+
