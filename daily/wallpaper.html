@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+ <head>
+   <link rel=stylesheet href="https://lkopp.ml/assets/css/fade.css">
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/x-icon" href="https://linker.ml/img/favicon.ico" media="screen"/>
+ </head>
+
+ <style>
+
+@-webkit-keyframes fade-in-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+     }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    }
+}
+
+.h1,.h2,.h3,.h4,.lead,body,h1,h2,h3,h4{
+  font-family:RobotoDraft,Roboto,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei",arial,sans-serif;font-weight:300;
+}
+
+@media (min-width: 767px) {
+body{
+ padding-left:200px;
+ padding-right:200px;
+ }
+}
+
+ </style>
+
+ <script>
+
+ajax()
+  function ajax(option){
+    var xhr = null;
+    if(window.XMLHttpRequest){
+      xhr = new window.XMLHttpRequest();
+    }else{ // ie
+      xhr = new ActiveObject("Microsoft")
+    }
+    xhr.open("get","location.href");
+    xhr.send(null);
+    xhr.onreadystatechange = function(){
+      var time = null,
+          curDate = null;
+      if(xhr.readyState===2){
+        // Get time
+        time = xhr.getResponseHeader("Date");
+        console.log(xhr.getAllResponseHeaders())
+        curDate = new Date(time);
+        document.getElementById("sitetime").innerHTML = (parseInt((((curDate.getTime() / 1000) - 1536768000 ) / 86400 )));
+      }
+    }
+  }
+
+
+</script>
+
+<title>壁纸</title>
+<body>
+   <div class="fade">
+      <h1 style="color: #999999;text-align:center;">壁纸</h1>
+      <div class="fade">
+        <h6 style="color: #999999;text-align:center">壁纸源:安卓壁纸APP每日推荐</h6>
+          <div class="fade"><img src="" style="width:100%" id="img1"></img>
+
+          <div class="fade"><img src="" style="width:100%" id="img2"></img>
+          <h2 style="color: #999999;margin-left:20px;margin-right:20px;line-height:45px;" id="content"></h2>
+
+            <div class="fade">
+
+            <span style="color:#999999;text-align:center;display: block;">
+             <a style="color: #999999;text-align:center;font-size: 12px;" href="http://linker.ml/daily/about.html">关于</a>
+             |
+             <a style="color: #999999;text-align:center;font-size: 12px;" href="http://linker.ml/daily/ss.html">源</a>
+             |
+             <a style="color: #999999;text-align:center;font-size: 12px;" href="http://linker.ml/daily/donate.html">捐赠</a>
+            </span>
+
+             <h6 style="color: #999999;text-align:center">© 2018 Link, Funny.</h6>
+             <span style="color:#999999;font-size:10px;text-align:center;display: block;font-weight:bold;">Already <span style="text-align:center" id="sitetime"></span> days.</span>
+             </div>
+             </div>
+           </div>
+        </div>
+     </div>
+</body>
+
+
+<script>
+
+var imghot = new XMLHttpRequest();
+imghot.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        m = JSON.parse(this.responseText);
+        //document.getElementById("demo").innerHTML = this.responseText;
+        //document.getElementById("de").innerHTML = m.res.vertical[0].preview;
+        document.getElementById("img1").src = m.res.vertical[0].preview;
+    }
+};
+imghot.open("GET", "http://service.picasso.adesk.com/v1/vertical/vertical?limit=30&skip=180&adult=false&first=0&order=hot", true);
+imghot.send();
+
+
+var imgnew = new XMLHttpRequest();
+imgnew.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        m2 = JSON.parse(this.responseText);
+        //document.getElementById("demo").innerHTML = this.responseText;
+        //document.getElementById("demo2").innerHTML = m2.res.vertical[0].wp;
+        document.getElementById("img2").src = m2.res.vertical[0].wp;
+    }
+};
+imgnew.open("GET", "http://service.picasso.adesk.com/v1/vertical/vertical?limit=30&skip=180&adult=false&first=0&order=new", true);
+imgnew.send();
+
+</script>
