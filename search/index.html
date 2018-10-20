@@ -74,3 +74,40 @@
        </div>
      </div>
    </div>
+   <script>
+   window.onload=function(){
+  document.getElementById('alert').style.Transform='translateY(-100px)';
+  document.getElementById('alert').style.WebkitTransform='translateY(-100px)';
+}
+
+window.setInterval(clean, 4000);
+
+function clean(){
+  document.getElementById('alert').style.transform='translateY(-100px)';
+  document.getElementById('alert').style.WebkitTransform='translateY(-100px)';
+}
+
+function KeyDown()
+{
+  if (event.keyCode == 13)
+  {
+    event.returnValue=false;
+    event.cancel = true;
+    Form1.login.click();
+  }
+}
+
+function check(){
+ var search = null;
+ var temSearch = document.form1.username.value;
+ if(temSearch=search)
+{
+   document.getElementById('alert').style.transform='translateY(77px)';
+   document.getElementById('alert').style.WebkitTransform='translateY(78px)';
+}
+ else{
+    var sea=document.form1.username.value
+    location.href="http://www.baidu.com/baidu?wd="+sea.value;
+  }
+}
+</script>
