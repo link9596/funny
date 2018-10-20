@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+ <head>
+   <link rel=stylesheet href="https://atlinker.cn/assets/css/fade.css">
+   <link rel="stylesheet" type="text/css" href="css/default.css">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <script src="/js/emm.js"></script>
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/x-icon" href="https://atlinker.cn/img/favicon.ico" media="screen"/>
+ </head>
+
+ <style>
+
+@-webkit-keyframes fade-in-down2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+     }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    }
+}
+
+.fade2{
+ -webkit-animation: fade-in-down2 0.8s;
+ animation: fade-in-down2 0.8s;
+ transition: all 0.8s;
+ -webkit-transition: all 0.8s;
+}
+  
+.h1,.h2,.h3,.h4,.lead,body,h1,h2,h3,h4{
+  font-family:RobotoDraft,Roboto,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei",arial,sans-serif;font-weight:300;width:100%;
+}
+  
+.center{
+  margin: auto;
+}
+
+ </style>
+
+
+ <title>控制面板-link</title>
+   <body>
+    <h5 class="alert" id="alert">请输入要搜索的内容</h5>
+   <div class="fade">
+   <h1 style="color: #808080;text-align:center">搜点东西</h1>
+     <div class="fade">
+     <h4 style="color: #999999;text-align:center">233</h4>
+       <div class="fade">
+       <h5 style="color: #999999;text-align:center;"></h5>
+         <div class="fade">
+         <h2 style="color: #999999;text-align:center"></h2>
+           <div class="fade" style="margin:auto">
+             <div class="panel-lite" style="max-width: 300px;">
+               <div class="form-group">
+                 <form id="form1" name="form1" method="get" action="http://www.baidu.com/s" >
+                 <input type="text" name="username" class="form-control" required="required" onkeydown=KeyDown()/>
+                 <label class="form-label">搜啥？</label>
+                 <br/>
+                 <br/>
+               </div>
+
+               <div class="form-group">
+                 <input type="password" name="password" class="form-control" required="required" onkeydown=KeyDown()/>
+                 <label class="form-label">密　码</label>
+                 <br/>
+                 <br/>
+                 </div>
+                 <input class="link-button" type="button" name="login" value="登入" onclick="check();"/>
+                 <input class="link-button" type="reset" value="重置" />
+                 </form>
+               </div>
+             </div>    
+          </div>
+
+           <h6 style="color: #aaaaaa;text-align:center">© 2018 Link, Funny.</h6>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
