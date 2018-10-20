@@ -54,7 +54,7 @@
            <div class="fade" style="margin:auto">
              <div class="panel-lite" style="max-width: 300px;">
                <div class="form-group">
-                 <form id="form1" name="form1" method="get" action="http://www.baidu.com/baidu" >
+                 <form id="form1" name="form1" method="get">
                  <input type="text" name="username" class="form-control" required="required" onkeydown=KeyDown()/>
                  <label class="form-label">搜啥？</label>
                  <br/>
@@ -104,9 +104,9 @@ function check(){
    document.getElementById('alert').style.transform='translateY(77px)';
    document.getElementById('alert').style.WebkitTransform='translateY(78px)';
 }
-// else{
- //   var sea=document.form1.username.value
-   // location.href="http://www.baidu.com/baidu?wd="+sea.value;
-  //}
+ else{
+    var sea=document.form1.username.value
+    location.href="http://www.baidu.com/baidu?wd="+sea.value;
+  }
 }
 </script>
