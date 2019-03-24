@@ -57,7 +57,7 @@ window.onload=function()
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       var data = JSON.parse(xhr.responseText);
-      var hitokoto = document.getElementById('hitokoto');
+      var hitokoto = document.getElementById('yiyan');
       hitokoto.innerText = data.hitokoto;
     }
   }
