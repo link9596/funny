@@ -34,6 +34,8 @@ body{
  </style>
 
  <script data-instant-track>
+InstantClick.on('receive', er);
+function(er){
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -70,7 +72,7 @@ ajax()
     }
   }
 console.log(23);
-
+}
 </script>
 
 <title>文。</title>
