@@ -34,7 +34,7 @@ body{
  </style>
 
  <script data-no-instant>
-InstantClick.on('receive', function() {
+InstantClick.on('change', function() {
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
