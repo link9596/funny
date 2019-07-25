@@ -10,3 +10,16 @@ p.open("GET",a),p.send())}function P(a){"display"in q||(q.display=+new Date-q.st
 h.style&&(c="-"+a[b].toLowerCase()+"-"+c);a=d.createElement("style");a.innerHTML="#instantclick{position:"+(Q?"absolute":"fixed")+";top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;"+c+":opacity .25s .1s}.instantclick-bar{background:#E91E63;width:100%;margin-left:-100%;height:2px;"+c+":all .25s}";d.head.appendChild(a);Q&&(m(),addEventListener("resize",m),addEventListener("scroll",m))},start:a,done:e}}(),R="pushState"in history&&(!I.match("Android")||I.match("Chrome/"))&&"file:"!=e.protocol;
 return{supported:R,init:function(){if(!k)if(R){for(var a=arguments.length-1;0<=a;a--){var b=arguments[a];!0===b?J=!0:"mousedown"==b?D=!0:"number"==typeof b&&(H=b)}k=w(e.href);h[k]={body:d.body,title:d.title,scrollY:pageYOffset};for(var b=d.head.children,c,a=b.length-1;0<=a;a--)c=b[a],c.hasAttribute("data-instant-track")&&(c=c.getAttribute("href")||c.getAttribute("src")||c.innerHTML,E.push(c));p=new XMLHttpRequest;p.addEventListener("readystatechange",W);L(!0);C.init();t("change",!0);addEventListener("popstate",
 function(){var a=w(e.href);a!=k&&(a in h?(h[k].scrollY=pageYOffset,k=a,K(h[a].title,h[a].body,!1,h[a].scrollY)):e.href=e.href)})}else t("change",!0)},on:function(a,b){B[a].push(b)}}}(document,location);
+
+var daily = new XMLHttpRequest();
+daily.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        cocolink = JSON.parse(this.responseText);
+        document.getElementById("title").innerHTML = cocolink.data.title;
+        document.getElementById("content").innerHTML = cocolink.data.content;
+        document.getElementById("author").innerHTML = cocolink.data.author;
+        console.log(1);
+  }
+};
+daily.open("GET", "https://interface.meiriyiwen.com/article/today?dev=1", true);
+daily.send();
