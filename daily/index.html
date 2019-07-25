@@ -41,6 +41,7 @@ daily.onreadystatechange = function() {
         document.getElementById("title").innerHTML = cocolink.data.title;
         document.getElementById("content").innerHTML = cocolink.data.content;
         document.getElementById("author").innerHTML = cocolink.data.author;
+        console.log(1);
   }
 };
 daily.open("GET", "https://interface.meiriyiwen.com/article/today?dev=1", true);
@@ -68,7 +69,7 @@ ajax()
       }
     }
   }
-
+console.log(23);
 
 </script>
 
