@@ -33,8 +33,7 @@ body{
 
  </style>
 
- <script data-no-instant>
-InstantClick.on('change', function() {
+ <script>
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -71,8 +70,6 @@ ajax()
     }
   }
 console.log(23);
- });
-InstantClick.init();
 </script>
 
 <title>文。</title>
