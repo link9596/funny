@@ -14,8 +14,8 @@ if( window.ActiveXObject ){
 
 }else{
     function addLink(){
-   document.getElementById('alert').style.transform='translateY(77px)';
-   document.getElementById('alert').style.WebkitTransform='translateY(78px)';
+   document.getElementById('alert').style.transform='translateY(100px)';
+   document.getElementById('alert').style.WebkitTransform='translateY(100px)';
     }
     document.oncopy = addLink;
 }  
