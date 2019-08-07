@@ -20,3 +20,11 @@ if( window.ActiveXObject ){
     }
     document.oncopy = addLink;
 }  
+
+
+document.getElementById("btn").onclick = function(){
+  document.querySelector('.msg').className += " open";
+  setTimeout(function(){
+    document.querySelector('.msg').className = "msg";
+  },2000);
+}
