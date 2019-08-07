@@ -1,12 +1,12 @@
 window.onload=function(){
-  document.getElementById('alert').style.top='-500px';
+  document.getElementById('alert').style.top='0px';
   //document.getElementById('alert').style.WebkitTransform='translateY(-100px)';
 }
 
 window.setInterval(clean, 8000);
 
 function clean(){
-  document.getElementById('alert').style.top='-500px';
+  document.getElementById('alert').style.top='0px';
   //document.getElementById('alert').style.WebkitTransform='translateY(-100px)';
 }
 
