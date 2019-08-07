@@ -3,7 +3,7 @@ window.onload=function(){
   document.getElementById('alert').style.WebkitTransform='translateY(-100px)';
 }
 
-window.setInterval(clean, 4000);
+window.setInterval(clean, 8000);
 
 function clean(){
   document.getElementById('alert').style.transform='translateY(-100px)';
