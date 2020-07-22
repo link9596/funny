@@ -62,6 +62,21 @@ body{
 </body>
 
 <script>
+ var rtime = Date.parse(new Date())/1000;
+ var starttime = 1299340800;
+ var daily = (rtime - 1595347200 + 1299340800)*1000;
+ var timestr = new Date(parseInt(daily));
+ var year = timestr.getFullYear();
+ var month = buO(timestr.getMonth()+1,2);
+ var date = buO(timestr.getDate(),2);
+ var datetime = year+""+month+""+date;  
+//日月补零
+	function buO(val,n)
+   {
+       return (Array(n).join(0) + val).slice(-n);
+   }
+ var res = "https://interface.meiriyiwen.com/article/day?dev=1&date="+datetime
+
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -72,7 +87,7 @@ daily.onreadystatechange = function() {
         console.log(1);
   }
 };
-daily.open("GET", "https://interface.meiriyiwen.com/article/today?dev=1", true);
+daily.open("GET", res , true);
 daily.send();
 
 var img = new XMLHttpRequest();
