@@ -84,15 +84,15 @@ body{
    {
        return (Array(n).join(0) + val).slice(-n);
    }
- var res = "https://interface.meiriyiwen.com/article/day?dev=1&date="+datetime
-
+// var res = "https://interface.meiriyiwen.com/article/day?dev=1&date="+datetime
+var res = "https://v2.alapi.cn/api/one?token=LwExDtUWhF3rH5ib"
 var daily = new XMLHttpRequest();
 daily.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         cocolink = JSON.parse(this.responseText);
         document.getElementById("title").innerHTML = cocolink.data.title;
         document.getElementById("content").innerHTML = cocolink.data.content;
-        document.getElementById("author").innerHTML = cocolink.data.author;
+        document.getElementById("author").innerHTML = cocolink.data.subtitle;
         console.log(1);
   }
 };
